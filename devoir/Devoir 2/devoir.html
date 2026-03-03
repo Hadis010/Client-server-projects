@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/StyleSheet1.css" type="text/css">
+    <meta charset="UTF-8" />
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1><strong>Formulaire</strong></h1>
+    <hr width="350px" align="left">
+    <form action="/devoir.html" method="post">
+            <h2>Informaions personnels</h2>
+            <input type="search" placeholder="Taper ici"><br>
+            <label for="first_name">Prénom:</label>
+            <input type="text" id="first_name" placeholder="user_first_name"><br>
+            <input id="first_name" name="first_name" type="hidden" value="xm234jq">
+            <label for="last_name">Nom:</label>
+            <input type="text" id="last_name" placeholder="user_last_name"><br>
+            <label for="age">Âge:</label>
+            <input type="range" id="age" min="18" max="80" step="1">
+            <input type="number"><br>
+            <input id="first_name" name="first_name" type="hidden" value="xm234jq">
+            <label for="birthdate">Entrez votre date de naissance:</label>
+            <input type="date" id="birthdate"><br>
+            <p>Justificatif:</p>
+            <input type="file" accept=".pdf"><br>
+            <label for="Contact">Numéro de téléphone:</label>
+            <input type="tel" id="Contact"><br>
+            <p>Veuillez indiquer votre temps de disponibilité:</p>
+            <label for="time">Choisissez une heure dans la semaine:</label>
+            <input type="time" id="time" name="time"><br>
+            <label for="month">Choisissez un mois :</label>
+            <input type="month" id="month" name="month"><br>
+            <label for="week">Choisissez une semaine:</label>
+            <input type="week" id="week" name="week"><br>
+            <label for="color">Couleur préféré:</label>
+            <input type="color" id="color"><br>
+            <h2>Langues parlées</h2>
+            <input type="checkbox" checked> Français<br>
+            <input type="checkbox"> Anglais<br>
+            <input type="checkbox"> Espagnol<br>
+            <h2>Le sexe de la personne</h2>
+            <input type="radio" name="Sexe" value="Homme"> Homme <br>
+            <input type="radio"name="Sexe" value="Femme"> Femme <br>
+            <h2>Mot de passe</h2>
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" placeholder="user_password" required minlength="8" maxlength="12"><br>
+            <input type="button" value="OK">
+            <input type="image" id="image" alt="Ok"src="ok.png" width="30px">
+            <h2>Insérez votre adresse email</h2>
+            <label for="personal_email">Email:</label>
+            <input type="email" id="personal_email" placeholder="user_mail" >
+            <p>Si vous avez d'autres adresses personnelles:</p>
+            <input type="url" ><br>
+            <p>on est le :</p>
+            <input type="datetime-local" ><br>
+            <input type="datetime" ><br>
+            <br>
+            <input type="reset" value="Refaire">
+            <input type="submit" value="Envoyer"><br>
+            <br>
+            <input type="text" id="Text" readonly value="Merci d'avoir rempli ce formulaire" size="30"><br>
+            <hr width="350px" align="left">
+            <h1>Fin de formulaire</h1>
+    </form>
+</body>
+<html>

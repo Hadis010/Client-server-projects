@@ -1,0 +1,59 @@
+Pour les balises HTML :
+on trouve dans le body, plusieurs divisions mais chacune de ces balises a un id différent de l'autre. Vous trouverez les différents id qui caractérisent les balises précédentes:
+"global","navigation","midpage","content" et "sidebar".
+Pour les propriétés Css:
+Les id qu'on avait attribué aux divisions nous aident à appliquer des proprités CSS certaines au niveau de chaque division, et donc permet que les divisions ayent différents styles.
+	Au niveau de la taille:
+		Hauteur:
+			Pour la balise body: indéfini par défaut elle prend une hauteur.
+			Pour la balise div ayant comme id "global": 600px.
+			Pour la balise div ayant comme id "navigation": 150px.
+			Pour la balise div ayant comme id "midpage": 450px.
+			Pour la balise div ayant comme id "content": 90% de la page.
+			Pour la balise div ayant comme id "sidebar": 90% de la page.
+		Largeur:
+			Pour la balise body: 600px.
+			Pour la balise div ayant comme id "global": 80% de la page.
+			Pour la balise div ayant comme id "navigation": 100% de la page.
+			Pour la balise div ayant comme id "midpage": 100% de la page.
+			Pour la balise div ayant comme id "content": 70% de la page.
+			Pour la balise div ayant comme id "sidebar": 25% de la page.
+	Au niveau de l'affichage:
+		Pour la balise body: flex.
+		Pour la balise div ayant comme id "global": flex.
+		Pour la balise div ayant comme id "navigation": flex par défaut(car navigation appartient au div "global") .
+		Pour la balise div ayant comme id "midpage": flex.
+		Pour la balise div ayant comme id "content": flex par défaut(car navigation appartient au div "midpage").
+		Pour la balise div ayant comme id "sidebar": flex par défaut(car navigation appartient au div "midpage").
+	Au niveau de l'alignement:
+		Pour la balise body: center.
+		Pour la balise div ayant comme id "global": 600px.
+		Pour la balise div ayant comme id "navigation": center.
+		Pour la balise div ayant comme id "midpage": center.
+		Pour la balise div ayant comme id "content": 90% de la page.
+		Pour la balise div ayant comme id "sidebar": 90% de la page.
+	Au niveau de la couleur du fond:
+		Pour la balise body: light yellow (jaune pastel).
+		Pour la balise div ayant comme id "global": light yellow (car la division global se trouve dans la divison body et vu qu'on n'avait pas choisit une couleur de fond, elle prend la couleur de fond dans la division où elle se trouve).
+		Pour la balise div ayant comme id "navigation": grey (gris).
+		Pour la balise div ayant comme id "midpage": yellow (jaune).
+		Pour la balise div ayant comme id "content": red (rouge).
+		Pour la balise div ayant comme id "sidebar": green (vert).
+	Au niveau de la bordure:
+		Style:
+			Pour la balise div ayant comme id "content": solid(solide).
+			Pour la balise div ayant comme id "sidebar": solid(solide).
+		Courbure:
+			Pour la balise div ayant comme id "content": on utilise un seul rayon de courbure qui a une valeur de 30 px pour les quatre angles de la division content .
+		Largeur:
+			Pour la balise div ayant comme id "content": 5px.
+		Couleur:
+			Pour la balise div ayant comme id "sidebar": blue (bleu).
+	Au niveau de l'axe principal et l'alignement sur l'axe principal:
+		Pour la balise body: column.
+		Pour la balise div ayant comme id "global": column et space-between.
+		Pour la balise div ayant comme id "midpage": row et space-between.
+	Au niveau de l'axe secondaire et l'alignement sur l'axe secondaire:
+		Pour la balise body: row et center.
+		Pour la balise div ayant comme id "global": row .
+		Pour la balise div ayant comme id "midpage": column et center.

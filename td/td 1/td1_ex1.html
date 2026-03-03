@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>JS EX1</title>
+        <script>
+            function hello() {
+                let txtfname = document.getElementById("txtfname");                
+                let txtlname = document.getElementById("txtlname");
+                let fname = txtfname.value;
+                let lname = txtlname.value;
+
+                alert("Hello " + fname + " " + lname);
+
+                console.log("Hello " + fname + " " + lname);
+                console.log(fname);
+                console.log(lname);
+            }
+        </script>
+    </head>
+    <body>
+        <label>First name:</label>
+        <input type="text" id="txtfname" value="Aabecede">
+        <br>
+        <br>
+        <label>Last name:</label>
+        <input type="text" id="txtlname" value="ABCD">
+        <br>
+        <br>
+        <button onclick="hello()">Submit</button>
+    </body>
+    </html> 

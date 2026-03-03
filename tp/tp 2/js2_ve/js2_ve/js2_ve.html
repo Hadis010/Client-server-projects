@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>TP-JavaScript-EX2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script2.js"></script>
+</head>
+
+<body onload="displaySlide()">
+    <h1>TP-JavaScript-EX2</h1>
+    <div id="ex2">
+        <div class="slides">
+            <img src="img/img1.jpg" alt="img1" style="width:100%">
+        </div>
+
+        <div class="slides">
+            <img src="img/img2.jpg" alt="img2" style="width:100%">
+        </div>
+
+        <div class="slides">
+            <img src="img/img3.jpg" alt="img3" style="width:100%">
+        </div>
+        <div id="control">
+            <button type="button" onclick="previousSlide(-1)">Previous</button>
+            <button type="button" onclick="showImage(0)">Image 1</button>
+            <button type="button" onclick="showImage(1)">Image 2</button>
+            <button type="button" onclick="showImage(2)">Image 3</button>
+            <button type="button" onclick="nextSlide(+1)">Next</button>
+        </div>
+        <hr style ="color : black; width: 100%;">
+        <div id= "controlV2">
+            <img src="img/previous.svg" alt="prev" class="navbutton" onclick="nextSlide(-1)">
+            <img src="img/img1.jpg" class="thumbnails" alt="img1" style= "width:100px"onclick="showImage(0)">
+            <img src="img/img2.jpg" class="thumbnails" alt="img2" style= "width:100px"onclick="showImage(0)">
+            <img src="img/img3.jpg" class="thumbnails" alt="img3" style= "width:100px"onclick="showImage(0)">
+            <img src="img/next.svg" alt="next" class="navbutton" onclick="nextSlide(1)">
+        </div>
+    </div>
+    <hr style ="color : black; width: 100%;">
+</body>
+
+</html>

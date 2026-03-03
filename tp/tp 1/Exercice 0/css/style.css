@@ -1,0 +1,23 @@
+#titrerouge{
+color : red;
+}
+#titrevert{
+    color : green;
+}
+p{
+    color: blue;
+    background-color: yellow;
+    font-size: large;
+}
+#blocA{
+    width: 800px;
+    height: 600px;
+    background-color: black;
+    display: flex;
+}
+#blocA1{
+    width: 600px;
+    height: 400px;
+    background-color: yellow;
+    margin: 100px;
+}

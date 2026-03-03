@@ -1,0 +1,55 @@
+Exercice 2:
+Vous trouverez les solutions des waves à partir de 1 jusqu'à 9 comme demander:
+	1ère Wave: justify-content:center;
+
+	2ème Wave: justify-content:flex-end;
+		   ----------------------------
+		   justify-content:center;
+		   ----------------------------
+		   justify-content:flex-end;
+
+	3ème Wave: justify-content:center;
+		   ----------------------------
+		   justify-content:space-between;
+
+	4ème Wave: align-items:flex-end;
+		   ----------------------------------
+		   align-items:flex-end;
+
+	5ème Wave: align-items:flex-end;
+		   justify-content:space-around;
+		   ---------------------------------
+		   justify-content:center;
+		   ----------------------------------
+		   align-items:center;
+		   justify-content:center;
+
+	6ème Wave: align-items:center;
+		   justify-content:space-between;
+	
+	7ème Wave: flex-direction: column;
+		   -------------------------
+		   flex-direction: column;
+
+	8ème Wave: flex-direction: column;
+		   -----------------------------
+		   flex-direction: column;
+		   align-items:center;
+
+	9ème Wave: justify-content:space-around;
+		   flex-direction: row-reverse;
+		   ---------------------------------
+		   flex-direction: row-reverse;
+		   justify-content:space-around;
+		   align-items:center;
+
+
+		   
+		   
+	
+
+	
+		   
+
+
+

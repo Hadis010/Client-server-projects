@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>BDD XML</title>
+    <style>
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+    </style>
+    <script src="script/bdd_xml.js"></script>
+</head>
+
+<body>
+<button type="button" onclick="loadXMLDoc()">My book collection</button>
+<button type="button" onclick="addBook()">Add</button>
+<button type="button" onclick="saveBook()" id="btnSave">Save</button>
+<br><br>
+<table id="data"></table>
+
+<br>
+<br>
+<table id="tblBook" style="display: none;">
+    <tr>
+        <td>Book Title</td>
+        <td><input type="text" size="50" id="txtTitle"></td>
+    </tr>
+    <tr>
+        <td>Authors</td>
+        <td><input type="text" size="50" id="txtAuthor"></td>
+    </tr>
+    <tr>
+        <td><input type="hidden" id="hId"></td>
+        <td>
+            <button type="button" onclick="updateBook()" id="btnUpdate">Update</button>
+            <button type="button" onclick="submitBook()" id="btnAdd">Submit</button>
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS GAME1 A</title>
+    <style>
+        tr,td {
+            border: 1px solid black;
+        }
+        #container {
+            width: 400px;   
+            height:50px;
+            position: relative;
+            background: yellow;
+        }
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+    <script>
+        let etat = false;
+        var timerId;
+        let posx=0;
+        let x=5;
+
+        function startstop(){
+            if(etat) {
+                clearInterval(timerId);
+                etat = false;
+            }
+            else {
+                timerId = setInterval(tick,10);
+                etat = true;
+            }
+        }
+
+        function tick(){
+            let txtGame= document.getElementById("txtGame");
+            let elem = document.getElementById("animate");
+            let a = parseInt(txtGame.value);
+
+            if(a<99 ){
+                 a = a +1;
+                 if(posx<=400){
+                    posx+=x;
+                    elem.style.left = posx + "px"; 
+                 }
+                
+                
+                if(posx>350){
+                    x=-x;
+                }  
+                if(posx<0){
+                    x=-x;
+                }  
+            } 
+           
+           
+           else{
+               a=0;
+          
+           
+       }
+       txtGame.value = a;
+        }
+
+        function catchvalue(){
+            let txtGame=document.getElementById("txtGame");
+            let a = parseInt(txtGame.value);
+            let scores=document.getElementById("trValues");
+            scores.innerHTML+="<td class='scores' value='"+a+"' >"+a+"</td>";
+        }
+
+        function Bestscore(){
+            let scores=document.getElementsByClassName("scores");
+            let bestscore=scores[0].getAttribute('value');
+            for(let i=0;i<scores.length;i++){
+                if(Math.abs(50-bestscore)>Math.abs(50-scores[i].getAttribute('value'))){
+                    bestscore=scores[i].getAttribute('value');
+                    
+                }
+                
+            }
+
+            alert(bestscore);
+        }
+
+    </script>
+</head>
+<body>
+    <label>50:</label>
+    <input type="text" id="txtGame" value="0"><br>
+    <br>
+    <div id ="container">
+        <div id ="animate"></div>
+    </div>
+    <br>
+    <input type="submit" value="Start/Stop" onclick="startstop()">
+    <input type="submit" value="Catch" onclick="catchvalue()">
+    <input type="submit" value="Bestscore" onclick="Bestscore()">
+    <br>
+    <br>
+    <div>
+        <table>
+            <tbody>
+                <tr id="trValues">
+                    <td>Values</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html> 

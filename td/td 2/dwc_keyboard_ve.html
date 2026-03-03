@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #container {
+            width: 400px;   
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('keydown',eventHandler);
+        let posx = 0;
+        let posy = 0;
+        
+        function eventHandler(event) {
+            let name = event.key;
+            let code = event.code;
+            let elem = document.getElementById("animate");
+            
+            if(name == "ArrowRight" && posx <350 ){            
+                posx+=5;                               
+            }
+            if(name == "ArrowLeft" && posx > 0 ){            
+                posx-=5;                               
+            }
+            if(name == "ArrowDown" && posy < 350 ){            
+                posy+=5;                               
+            }
+            if(name == "ArrowUp" && posy > 0 ){            
+                posy-=5;                               
+            }
+
+            elem.style.left = posx + "px";
+            elem.style.right = posx + "px";
+            elem.style.bottom = posy + "px";
+            elem.style.top = posy + "px";
+        }
+    </script>
+
+<body>
+    <div id ="container">
+        <div id ="animate"></div>
+    </div>
+</body>
+
+</html>

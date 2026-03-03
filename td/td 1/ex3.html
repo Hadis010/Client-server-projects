@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function addition() {
+        let n1 = document.getElementById("n1").value;
+        let n2 = document.getElementById("n2").value;
+        if (!isNaN(n1) && !isNaN(n2)){
+            let result = Number(n1)+Number(n2);
+            let txtResult = document.getElementById("result");
+            txtResult.value = result;
+        }else{
+            alert("Pas un chiffre");
+        }       
+        }
+
+        function subtraction() {
+        let n1 = document.getElementById("n1").value;
+        let n2 = document.getElementById("n2").value;
+        if (!isNaN(n1) && !isNaN(n2)){
+            let result = Number(n1)-Number(n2);
+            let txtResult = document.getElementById("result");
+            txtResult.value = result;
+        }else{
+            alert("Pas un chiffre");
+        }
+        }
+        function multiplication(){
+        let n1 = document.getElementById("n1").value;
+        let n2 = document.getElementById("n2").value;
+        if (!isNaN(n1) && !isNaN(n2)){
+            let result = Number(n1)*Number(n2);
+            let txtResult = document.getElementById("result");
+            txtResult.value = result;
+        }else{
+            alert("Pas un chiffre");  
+        }
+        }       
+        function division() {
+        let n1 = document.getElementById("n1").value;
+        let n2 = document.getElementById("n2").value;
+        if (!isNaN(n1) && !isNaN(n2) ){
+            if (Number(n2) != 0){
+                let result = Number(n1)/Number(n2);
+                let txtResult = document.getElementById("result");
+                txtResult.value = result;
+            }
+            else{
+                alert("Division par zéro");
+            }
+        }
+        else{
+            alert("Pas un chiffre");
+        }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="n1" value>
+    <input type="text" id="n2" value>
+    <button onclick="addition()">+</button>
+    <button onclick="subtraction()">-</button>
+    <button onclick="multiplication()">*</button>
+    <button onclick="division()">/</button>
+    <input type="text" id="result" readonly>
+</body>
+</html>

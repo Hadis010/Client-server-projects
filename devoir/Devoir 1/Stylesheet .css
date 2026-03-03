@@ -1,0 +1,117 @@
+h1 { 
+    font-size:50 pt;
+    color:rgb(205, 177, 92); 
+    font-family: 'Oswald', sans-serif;   
+}
+blockquote:active{
+    color:rgb(205, 92, 184);
+    text-decoration: underline;
+}
+h2 {
+    font-size:50 pt;
+    color:rgb(205, 177, 92); 
+    font-family: 'Oswald', sans-serif;  
+}
+h2:hover {
+    color:rgb(205, 92, 184);
+    text-decoration: underline;
+}
+body {
+    width:90%;margin:auto;min-width:600px;max-width:2000px;
+    padding: 0;
+    background-size: cover;
+    background-image: url("img/background3.jpg");
+    display: flex;
+    flex-direction:column;    
+    align-items:center;
+    background-attachment: fixed;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+}
+span { 
+    font-weight: bold;
+    color: orange; 
+}
+#navigation {
+    width: 100%;
+}
+#navigation ol{
+    align-content;
+}  
+#navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content : space-around;
+}
+#navigation a {
+    text-decoration:none;
+    color:white;
+}
+#Présentation{
+    color: white;
+}
+#sousnavigation {
+    width:100%;
+    margin-bottom:5px;
+}
+#Intro {
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+#corps {
+    width:65%;
+    display:flex;
+    flex-direction:column;
+}
+#quote{
+    color: white;
+}
+#Introduction {
+    text-align:center;
+    padding:2%;
+    color:white;
+}
+#Tableau{
+  border-collapse: collapse;
+  width: 500px;
+  margin-left: 30%;
+  position:relative;
+  padding: 35px;
+  text-align: center;
+  opacity: 0.8;
+}
+#caché{
+    opacity: 0;
+}
+#Tableau{
+    color:white;
+}
+#tr, td{
+  border: 1px solid white;
+  padding: 10px;
+  vertical-align: top;
+  color:white;
+}
+#surpied{
+    color:white;
+    width:100%;
+    margin-bottom:5px;
+}
+#pied{
+    color:white;
+}
+blockquote {
+    margin: auto;
+}
+blockquote p {
+    padding: 15px;
+    background: rgb(205, 177, 92);
+    border-radius: 5px;
+}
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}

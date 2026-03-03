@@ -1,0 +1,90 @@
+<html>
+<head>
+    <link rel="stylesheet" href="StyleSheet.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Centaure">
+    <meta name="author" content="Dini Hafsa">
+    <meta name="keywords" content="Centaure, L2 Info, Brest">
+    <meta charset="UTF-8">
+    <title>Centaure</title>
+</head>
+<body>
+    <body>
+        <div id="entete">
+            <div="logo">
+            <img src="img/Centaure logo.jpg" alt="Logo_Cenature" width="150px" height="auto" />
+        </div>
+        <div id="Intro">
+            <p> Je vous présente "Centaure", un des fabuleux créatures de la mythologie grecque.</p>
+        </div>
+        </div>
+            <div id="navigation">
+                <ul>
+                    <li><div id="Présentation">Présentation</div></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Centaure">Ethymologie</a></li>
+                    <li><a href ="https://fr.wikipedia.org/wiki/Centaure">Les types de centaures</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Chiron_(mythologie)">Chiron le centaure</a></li>
+                </ul>
+            </div>
+            <div id="sousnavigation"><hr /></div>
+            <div id="corps">
+                <div id="Titre">
+                    <h1>Centaure : Créature mythologique </h1>
+                </div>
+            </div>
+            <div id="Contenu">
+                <div id="Introduction">
+                    <p>
+                        Un <em>centaure</em> est une créature <strong>mi-homme</strong>, <strong>mi-cheval</strong> (homme-cheval), que l'on disait issue soit d'Ixion et de Néphélé, soit de Centauros et des juments de Magnésie.<br>
+                        Le plus célèbre des centaures est <mark>Chiron</mark>, immortel et chargé de former les jeunes héros.<br>
+                    </p>
+                    <h2> Myhes antiques</h2>
+                    <p> Les <em>centaures</em> sont décrits comme ayant la partie inférieure <span>équine</span>. Ils vivaient à l'origine sur <span>le mont Pélion</span>, en <span>Thessalie</span>.<br>
+                        Parmi les plus connus : <mark>Chiron</mark> (centaure connu pour sa sagesse, qui sert de précepteur à de nombreux héros grecs dont Achille et Jason), Pholos (un centaure calme, ami d'Héraclès) et Nessos (un centaure sauvage qui tente d'enlever l'épouse d'Héraclès Déjanire, avant d'être tué par lui).<br>
+                        La mythologie grecque compte plusieurs autres centaures : Eurytion, Hyléos et Rhoécos, Crotos, Thérée.
+                    </p>
+                    <img id="photoID" src="img/Chiron.jpg" alt="Chiron" width="500px" height="auto"> </img>
+                    <div id="liste">
+                        <p>Liste des centaures connus autre que Chiron:</p>
+                    <ol>
+                        <li>Eurytion</li>
+                        <li>Hyléos</li>
+                        <li>Rhoécos</li>
+                        <li>Crotos</li>
+                        <li>Thérée</li>
+                      </ol>  
+                    </div>                    
+                </div>
+                <div id="Tableau">
+                    <table border="3">
+                        <tr>
+                            <td>Autres noms</td>
+                            <td>Sous-groupe</td>
+                            <td>Origine</td>
+                        </tr>
+                         <tr>
+                         <td>Κένταυροι / Kéntauroi</td>
+                         <td>Bête</td>
+                        
+                         <td>Mythologie grecque</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="quote">
+                  <blockquote cite="https://www.dicocitations.com/citation.php?mot=centaure">
+                  <p>L'homme est un centaure mû par des désirs antinomiques et hostiles qui galope dans un nuage de poussière à la recherche du paradis. </p>
+                  </blockquote>
+                  <figcaption>—Olivier Guez, <cite>La disparition de Josef Mengele</cite></figcaption>
+                </div>
+            </div>
+        <div id="surpied"><hr /></div>
+         <div id="pied">
+            <p>Merci d'avoir consulté ma page.</p>
+         </div>
+         <div id =caché>
+            <p>Je suis un élément caché dans cette page</p>
+        </div>
+    </body>
+    </html>

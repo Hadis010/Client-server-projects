@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+
+    <style>
+        h1 {
+            margin-left: 70px;
+        }
+
+        table td label {
+            float: left;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        table td input,
+        select,
+        span {
+            float: left;
+            margin-bottom: 5px;
+        }
+
+        table td textarea {
+            float: left;
+            width: 350px;
+            height: 150px;
+        }
+
+        [type="submit"] {
+            margin: 20px 0 0 20px;
+        }
+
+        p {
+            margin-left: 70px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        let Firstname = document.getElementById("txtFname");
+        let Lastname = document.getElementById("txtLname");
+        let code = document.getElementById("txtZIPCode");
+        let ads = document.getElementById("txtAddress");
+        let mail = document.getElementById("txtEmail");
+        let form = document.getElementById("form1");
+
+        if(form){
+        form.addEventListener('Register', (e) =>{
+            const errors = [];
+
+            if(Firstname.value.trim === ""){
+                errors.push("firstname est vide")
+            }
+
+            if(Lastname.value.trim === ""){
+                errors.push("lastname est vide")
+            }
+
+            if(errors.length > 0){
+                e.preventDefault();
+                
+            }
+            if (this.checked) {
+                console.log(this.value);
+            }
+            //e.preventDefault();
+            //console.log("clicked");
+        })
+        }
+        
+        function validateForm() {  
+    
+            function Fname(Firstname){
+                var regEx = /^[A-Za-z]+$/;
+                if(Firstname.value.match(regEx)){
+                    return true;
+                }
+            }
+
+            function nLame(Lastname){
+                var regEx = /^[A-Za-z]+$/;
+                if(Lastname.value.match(regEx)){
+                    return true;
+                }
+            }
+
+            function Code(code){
+                var regEx = /^[0-9]+$/;
+                if(code.value.match(regEx)){
+                return true;
+                }
+            }
+
+            function Adress(ads){
+                var regEx = /^[0-9a-zA-Z]+$/;
+                if(ads.value.match(regEx)){
+                return true;
+                }
+            }
+
+            function Email(mail){
+                var regEx = /^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,4}|\d+)$/i;
+                if(mail.value.match(regEx)){
+                return true;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="form1">
+        <table>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="txtUsername" size ="12" maxlength="12" minlength="7" /></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="txtPassword" size="12" maxlength="12" minlength="7" /></td>
+            </tr>
+            <tr>
+                <td><label for="firstname">First name:</label></td>
+                <td><input type="text" id="txtFname" size="45" /></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last name:</label></td>
+                <td><input type="text" id="txtLname" size="45" /></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" id="txtAddress" size="45" /></td>
+            </tr>
+            <tr>
+                <td><label for="ZIPcode">ZIP Code:</label></td>
+                <td><input type="text" id="txtZIPCode" size="20" /></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="mail" id="txtEmail" size="45" /></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" id="txtGender" name="sexe" value="Male" /> <span> Male</span>
+                    <input type="radio" id="txtGender" name="sexe" value="Female" /> Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="about">About:</label></td>
+                <td><textarea id="txtabout" rows="5" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><input type="submit" id="btnSubmit" value="Register" onclick="validateForm()" />
+                    <input type="submit" id="btnClear" value="Clear" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

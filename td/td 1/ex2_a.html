@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function turnOn() {
+            let myImg = document.getElementById('myImage');
+            myImg.src='pic_bulbon.gif'
+        }
+        function turnOff() {
+            let myImg = document.getElementById('myImage');
+            myImg.src='pic_bulboff.gif'
+        }
+        function sizeUp() {
+            let myImg = document.getElementById('myImage');
+            let current_width = myImg.clientWidth;
+            myImg.style.width = (current_width+10)+"px";
+            console.log(current_width);
+        }
+        function sizeDown() {
+            let myImg = document.getElementById('myImage');
+            let current_width = myImg.clientWidth;
+            myImg.style.width = (current_width-10)+"px";
+            console.log(current_width);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="turnOn()">ON</button>
+    <button onclick="sizeUp()">+</button>
+    <img id="myImage" src="pic_bulbon.gif" style="width:100px">
+    <button onclick="sizeDown()">- </button>
+    <button onclick="turnOff()">OFF</button>
+</body>
+</html>
+
+
+    

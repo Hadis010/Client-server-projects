@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .slideshow {
+            max-width: 800px;
+        }
+    </style>
+
+    <script>        
+        let sIndex = 0;
+        let index = 0;
+        let image = document.getElementById()
+        let changes=null;
+
+        function animation(){
+            changes=setInterval(pouranimer,3000);
+        }
+
+        function pouranimer(){
+            nextSlide(1);
+        }
+        
+        function nextSlide(n) {
+            sIndex = sIndex + n;
+            displaySlide();
+        }
+
+        function NumSlide(z){
+            sIndex = z;
+            displaySlide();
+        }
+                    
+        function displaySlide() {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+
+            if (sIndex >= slides.length) {
+                sIndex = 0;
+            }
+
+            if (sIndex < 0) {
+                sIndex = 2;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[sIndex].style.display = "block";
+            
+        }
+    </script>
+</head>
+
+<body onload="displaySlide(0),animation()">
+
+    <div class="slideshow">
+
+        <div class="slides">
+            <img src="img1.jpg" style="width:100%">
+        </div>
+
+        <div class="slides">
+            <img src="img2.jpg" style="width:100%">
+        </div>
+
+        <div class="slides">
+            <img src="img3.jpg" style="width:100%">
+        </div>
+
+        <br>
+
+        <input type="submit" onclick="nextSlide(-1)" value="Previous">
+        <input type="submit" onclick="NumSlide(0)" value="Image1">
+        <input type="submit" onclick="NumSlide(1)" value="Image2">
+        <input type="submit" onclick="NumSlide(2)" value="Image3">
+        <input type="submit" onclick="nextSlide(1)" value="Next">
+
+    </div>
+
+</body>
+</html>
